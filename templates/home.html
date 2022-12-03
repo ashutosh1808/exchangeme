@@ -14,7 +14,7 @@
 <body>
 	<center>
 	<h1> Welcome to ExchangeME: Your Foreign Exchange Companion </h1>
-	<form>
+	<form action="/convert">
 		<input type="number" step="any" name="amt" placeholder="enter an amount" min="1" required>
 		<br><br>
 		<select name="from_currency" required>
@@ -32,6 +32,7 @@
 			<option value="ROM">Romanian Leu</option>
 			<option value="CHF">Swiss franc</option>
 			<option value="DKK">Danish krone</option>
+			<option value="HUF">Hungarian forint</option>
 		</select>
 		<br><br>
 		<select name="to_currency" required>
@@ -48,11 +49,13 @@
 			<option value="IDR">Indonesian Rupiah</option>
 			<option value="ROM">Romanian Leu</option>
 			<option value="CHF">Swiss franc</option>
-			<option value="DKK">Danish krone</option>
+			<option value="DKK">Danish krone</option>	
+			<option value="HUF">Hungarian forint</option>
 		</select>
 		<br><br>
 		<input type="submit" value="Convert">
-	</form>
+	</form>	
+		{{msg}}
 	</center>
 </body>
 </html>
