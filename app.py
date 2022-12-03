@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def home():
-	return render_template("home.html")
+	return render_template("index.html")
 
 @app.route("/convert")
 def convert():
@@ -19,9 +19,9 @@ def convert():
 		res=c.convert(from_currency,to_currency,amt)
 		res=round(res,0)
 		msg=str(c1.get_symbol(from_currency))+str(amt)+" = "+str(c1.get_symbol(to_currency))+str(res)
-		return render_template("home.html",msg=msg)
+		return render_template("index.html",msg=msg)
 	except Exception as e:
-		return render_template("home.html",msg=e)
+		return render_template("index.html",msg=e)
 
 
 if __name__=="__main__":
