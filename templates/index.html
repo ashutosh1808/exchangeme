@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title> Welcome to ExchangeME </title>
+	<style>
+		*{
+			font-size:25px;
+			font-family:Arial;
+		}
+		body{
+				background-color:skyblue;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h1> Welcome to ExchangeME: Your Foreign Exchange Companion </h1>
+	<form action="/convert">
+		<input type="number" step="any" name="amt" placeholder="enter an amount" min="1" required>
+		<br><br>
+		<select name="from_currency" required>
+			<option value="">--Select the "from" currency--</option>
+			<option value="INR">Indian Rupee</option>
+			<option value="USD">United States Dollar</option>
+			<option value="EUR">Euro</option>
+			<option value="GBP">Pound Sterling</option>
+			<option value="JPY">Japanese Yen</option>
+			<option value="KRW">South Korean won</option>
+			<option value="CAD">Canadian Dollar</option>
+			<option value="ILS">Israeli Shekel</option>
+			<option value="SGD">Singapore Dollar</option>
+			<option value="IDR">Indonesian Rupiah</option>
+			<option value="ROM">Romanian Leu</option>
+			<option value="CHF">Swiss franc</option>
+			<option value="DKK">Danish krone</option>
+			<option value="HUF">Hungarian forint</option>
+		</select>
+		<br><br>
+		<select name="to_currency" required>
+			<option value="">--Select the "to" currency--</option>
+			<option value="INR">Indian Rupee</option>
+			<option value="USD">United States Dollar</option>
+			<option value="EUR">Euro</option>
+			<option value="GBP">Pound Sterling</option>
+			<option value="JPY">Japanese Yen</option>
+			<option value="KRW">South Korean won</option>
+			<option value="CAD">Canadian Dollar</option>
+			<option value="ILS">Israeli Shekel</option>
+			<option value="SGD">Singapore Dollar</option>
+			<option value="IDR">Indonesian Rupiah</option>
+			<option value="ROM">Romanian Leu</option>
+			<option value="CHF">Swiss franc</option>
+			<option value="DKK">Danish krone</option>	
+			<option value="HUF">Hungarian forint</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Convert">
+	</form>	
+		{{msg}}
+	</center>
+</body>
+</html>
