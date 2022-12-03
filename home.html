@@ -4,16 +4,21 @@
 	<style>
 		*{
 			font-size:25px;
+			font-family:Arial;
+		}
+		body{
+				background-color:skyblue;
 		}
 	</style>
 </head>
 <body>
 	<center>
+	<h1> Welcome to ExchangeME: Your Foreign Exchange Companion </h1>
 	<form>
 		<input type="number" step="any" name="amt" placeholder="enter an amount" min="1" required>
 		<br><br>
 		<select name="from_currency" required>
-			<option value="">--Select the from currency--</option>
+			<option value="">--Select the "from" currency--</option>
 			<option value="INR">Indian Rupee</option>
 			<option value="USD">United States Dollar</option>
 			<option value="EUR">Euro</option>
@@ -26,8 +31,8 @@
 			<option value="IDR">Indonesian Rupiah</option>
 		</select>
 		<br><br>
-				<select name="from_currency" required>
-			<option value="">--Select the from currency--</option>
+		<select name="to_currency" required>
+			<option value="">--Select the "to" currency--</option>
 			<option value="INR">Indian Rupee</option>
 			<option value="USD">United States Dollar</option>
 			<option value="EUR">Euro</option>
@@ -39,6 +44,8 @@
 			<option value="SGD">Singapore Dollar</option>
 			<option value="IDR">Indonesian Rupiah</option>
 		</select>
+		<br><br>
+		<input type="submit" value="Convert">
 	</form>
 	</center>
 </body>
