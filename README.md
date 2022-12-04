@@ -14,7 +14,7 @@ This is a real-time currency converter. It uses the forex library to compute the
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/ashutosh1808/exchangeme
 ```
 
 Go to the project directory
