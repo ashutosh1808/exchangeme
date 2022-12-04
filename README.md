@@ -4,10 +4,37 @@ This is a real-time currency converter. It uses the forex library to compute the
 
 ## Installation of libraries
 
-Install my-project with CMD
-
 ```bash
     pip install forex_python
 ```
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd exchangeme
+```
+
+Install dependencies
+
+```bash
+  pip install flask
+```
+
+Run the application
+
+```bash
+  python app.py
+```
+
+
     
     
